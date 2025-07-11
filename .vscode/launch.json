@@ -1,0 +1,74 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: ufold_test.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "ufold_test.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--test_files",
+                "bpnew"
+            ],
+            "env":{
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: ufold_test_fyf.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "ufold_test_fyf.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--test_files",
+                "bpnew"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: ufold_test_fyf_partition.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "ufold_test_fyf_partition.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--test_files",
+                "bpRNAnew_partition"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+            "justMyCode": true
+        },
+        {
+            "name": "Python Debugger: ufold_predict.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "ufold_predict.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--nc",
+                "False"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "2"
+            }
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

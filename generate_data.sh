@@ -1,0 +1,1 @@
+$ python process_data_newdataset.py your_own_directory_containing_bpseq_files
