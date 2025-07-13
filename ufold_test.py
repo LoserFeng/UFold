@@ -19,7 +19,7 @@ from ufold.data_generator import RNASSDataGenerator, Dataset
 from ufold.data_generator import Dataset_Cut_concat_new_canonicle as Dataset_FCN
 from ufold.data_generator import Dataset_Cut_concat_new_merge_two as Dataset_FCN_merge
 import collections
-
+RNA_SS_data = collections.namedtuple('RNA_SS_data','seq ss_label length name pairs')
 args = get_args()
 if args.nc:
     from ufold.postprocess import postprocess_new_nc as postprocess # 允许某些非规范配对（Non-Canonical Base Pairing）
@@ -201,7 +201,8 @@ def model_eval_all_test(contact_net,test_generator):
 
 
 def main():
-    torch.multiprocessing.set_sharing_strategy('file_system')
+    # torch.multiprocessing.set_sharing_strategy('file_system')
+    torch.multiprocessing.set_start_method("spawn", force=True)
     torch.cuda.set_device(0)
     
     #pdb.set_trace()
