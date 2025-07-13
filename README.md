@@ -87,6 +87,12 @@ We have also provided an offline version of our prediction tool for users to dir
 </code></pre>  
 After running the above command, you will get the output ct file,bpseq file, and figures in the results folder.
 
+
+### Preidict with PPA
+~~~
+python ufold_predict_with_ppa.py --nc False
+~~~
+
 ## Contribute
 
 We love your input! We want to make contributing to UFold as easy and transparent as possible. Please see our [Contributing Guide](CONTRIBUTING.md) to get started. Thank you to all our contributors!

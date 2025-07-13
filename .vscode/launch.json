@@ -60,7 +60,7 @@
                 "False"
             ],
             "env": {
-                "CUDA_VISIBLE_DEVICES": "2"
+                "CUDA_VISIBLE_DEVICES": "0"
             }
         },
         {
